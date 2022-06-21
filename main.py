@@ -1,4 +1,4 @@
- #988598060538015815
+
 import discord
 import json
 from discord.ext import commands
@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
 async def on_ready():
-    print(f'We have logged in as {bot.user}')
+    print(f'Logged in as {bot.user}')
     await bot.change_presence(status=discord.Status.idle)
 
 @bot.command()
